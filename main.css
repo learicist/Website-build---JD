@@ -7,6 +7,18 @@
 	background-color: rgb(0, 0, 0, 0.5);
 }
 
+#title_contain {
+	text-align: center;
+	background-color: aqua;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	box-shadow: 1px 2px 2px;
+}
+
+.header {
+	margin-bottom: 40px;
+}
+
 a:link {
 	color: rgb(0, 0, 0, 0.8);
 }
@@ -19,35 +31,39 @@ a:hover {
 	color: yellow;
 }
 
-.links {
-	display: inline-block;
-	margin: auto 1em;
+.btn {
+	
 	background-color: rgb(252, 252, 252, 0.7);
 	border-radius: 5px;
+	
+	/*text-align: center;
+	display: inline-block;
+	float: right;
+	margin: auto 5px;
+	min-width: 75px;*/
 }
 
+.links {
+	display: inline-block;
+	margin: 3px 1.5em;
+	border: 3px dashed black;
+}
 
 #navbar {
-	border: 1px solid black;
+	border: 2px solid black;
+	border-radius: 10px;
 	float: right;
 	margin-bottom: 20px;
+	display: inline-block;
 }
 
-#title_contain {
-	text-align: center;
-	background-color: aqua;
-	border-radius: 5px;
-	margin-bottom: 20px;
-	box-shadow: 1px 2px 2px;
-}
+
 
 /*.center_image {
 	text-align: center;
 }*/
 
-.header {
-	margin-bottom: 40px;
-}
+
 
 /*#title {
 	margin: 1em auto;
