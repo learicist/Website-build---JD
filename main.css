@@ -4,7 +4,7 @@
 }
 
 .container-fluid {
-	background-color: rgb(0, 0, 0, 0.5);
+	background-color: rgb(0, 0, 0, 0.5);	
 }
 
 #title_contain {
@@ -16,7 +16,7 @@
 }
 
 .header {
-	margin-bottom: 40px;
+	margin-bottom: 110px;
 }
 
 /*maybe switch to button, maybe just scratch*/
@@ -33,23 +33,26 @@ a:hover {
 }*/
 
 .btn {
-	background-color: rgb(252, 252, 252, 0.7);
+	background-color: ForestGreen;
 	border-radius: 5px;
 	display: inline-block;
 	margin: auto;	
 	float: right;
-	/*text-align: center;
+	opacity: 0.7;
+	color: aqua;
+	/*box-shadow: 0 0 5px black;
+	text-align: center;
 	display: inline-block;
 	margin: auto 5px;
 	min-width: 75px;*/
 }
 
 .links {
-	/*margin: 0.5em 0.5em;*/
 	border: 2px dashed black;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border-radius: 5px;
 	
 }
 
@@ -62,10 +65,18 @@ a:hover {
 
 
 
-/*.center_image {
-	text-align: center;
-}*/
+.center_image {
+	/*text-align: center;*/
+	margin: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
 
+#drawing {
+	border-radius:15px;
+}
 
 
 /*#title {
