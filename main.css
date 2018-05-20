@@ -19,7 +19,8 @@
 	margin-bottom: 40px;
 }
 
-a:link {
+/*maybe switch to button, maybe just scratch*/
+/*a:link {
 	color: rgb(0, 0, 0, 0.8);
 }
 
@@ -29,32 +30,34 @@ a:visited {
 
 a:hover {
 	color: yellow;
-}
+}*/
 
 .btn {
-	
 	background-color: rgb(252, 252, 252, 0.7);
 	border-radius: 5px;
-	
+	display: inline-block;
+	margin: auto;	
+	float: right;
 	/*text-align: center;
 	display: inline-block;
-	float: right;
 	margin: auto 5px;
 	min-width: 75px;*/
 }
 
 .links {
-	display: inline-block;
-	margin: 3px 1.5em;
-	border: 3px dashed black;
+	/*margin: 0.5em 0.5em;*/
+	border: 2px dashed black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
 }
 
 #navbar {
 	border: 2px solid black;
 	border-radius: 10px;
-	float: right;
 	margin-bottom: 20px;
-	display: inline-block;
+	float: right;
 }
 
 
