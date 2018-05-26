@@ -1,8 +1,10 @@
-
+//build button flag to be able to return to home screen
+//once a button is clicked, the flag must allow the others to work
 
 $(document).ready(function () {
 	
-	$('.btn').mouseenter(function (event) {
+	//css for the buttons upon mouse enter
+	/*$('.btn').mouseenter(function (event) {
 		//event.preventDefault();
 		$(this).css('background-color', 'black');
 		$(this).css('color', 'aqua');
@@ -10,7 +12,7 @@ $(document).ready(function () {
 		//event.preventDefault();
 		$(this).css('background-color', 'aqua');
 		$(this).css('color', 'black');
-	});
+	});*/
 	
 	$('button').on('click', function (event) {
 		//event.preventDefault();
@@ -19,24 +21,15 @@ $(document).ready(function () {
 		
 		$('#drawing').hide(1500);
 		
+		//respond to clicked button with appropriate deistination
 		if (this.id == 'reel') {
-			//alert('yay');
 			$('#reelSummon').removeClass('hidden');
-			/*case #reel:
-				$('#reelSummon').show();
-				break;
-			case #contact:
-				alert('put form here');
-				break;
-			case #links:
-				alert('put links and icons here');
-				break;
-			case #pics:
-				alert('put headshots here');
-				break;
-			default:
-				break;*/
-				
+		} else if (this.id == 'contact') {
+			$('#contactSummon').removeClass('hidden');
+		} else if (this.id == 'links') {
+			$('#linksSummon').removeClass('hidden');
+		} else if (this.id == 'pics') {
+			$('#picsSummon').removeClass('hidden');
 		}
 
 	});
