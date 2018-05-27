@@ -89,7 +89,7 @@ a:hover {
 
 .center_image {
 	/*text-align: center;*/
-	margin: 50px;
+	margin: 6% 25%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
