@@ -18,7 +18,7 @@
 
 
 #header {
-	margin: 20px 0 50px 0;
+	margin: 20px 0 30px 0;
 	display: flex;
 	justify-content:center;
 	background-color: #A31E39;
@@ -30,31 +30,22 @@
 	
 }
 
-/*#title_contain {
-	text-align: center;
-	background-color: #A31E39;
-	opacity: 0.7;
-	margin-bottom: 5%;
-	border-radius: 5px;
-	box-shadow: 1px 2px 2px;
-}*/
-
 #title {
 	color: #D6E4E1;
 	font-family: 'Montserrat', sans-serif;
-	border: 2px solid yellow;
-	/*margin: 1em auto;
-	text-align: center;*/
+	/*border: 2px broken black;*/
+	box-shadow: 0px 0px 5px;
 }
 
-#navbar {
-	border: 3px dotted #A31E39;
+#mainBtns {
+	border: 1px dotted #A31E39;
 	border-radius: 10px;
-	margin: 5% 25%;
-	display:flex;
-	justify-content: center;
+	margin: 3% auto;
+	padding: 2px;
 	background-color: #BFCFCC; /*change to a lighter shade that matches*/
 	/*opacity: 0.6;
+	display:flex;
+	justify-content: center;
 	float: right;*/
 }
 
@@ -71,15 +62,17 @@ a:hover {
 	color: yellow;
 }*/
 
-/*.links {
-	border: 2px dashed black;
-	font-size: 2.5 em;
-	align-items: center;
-	margin: 2px 0;
+.links {
+	border: 0.5px dashed black;
 	display: flex;
 	justify-content: center;
-	border-radius: 5px;
-}*/
+	margin: 5px 0px;
+	/*font-size: 2.5 em;
+	align-items: center;
+	
+	
+	border-radius: 5px;*/
+}
 
 .btn {
 	font-family: 'Lora', serif;
@@ -87,11 +80,13 @@ a:hover {
 	border-radius: 5px;	
 	color: #D6E4E1; 
 	box-shadow: 0 0 2px black;
+	
 	/*text-align: center;
-	display: inline-block;	
-	opacity: 0.7;
 	display: inline-block;
 	margin: auto 5px;
+	opacity: 0.7;
+	display: inline-block;
+	
 	float: right;
 	min-width: 75px;*/
 }

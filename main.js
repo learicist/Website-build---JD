@@ -14,7 +14,9 @@ $(document).ready(function () {
 		$(this).css('color', 'black');
 	});*/
 	
-	$('#navbar').on('click', "button", function () {
+	let userArray = [];
+	
+	$('#mainBtns').on('click', "button", function () {
 		
 		let buttons = {
 			'reel': $('#reelSummon'),
@@ -23,10 +25,24 @@ $(document).ready(function () {
 			'contact': $('#contactSummon')
 		}
 		
-		$('#drawing').hide(1500);
-		let selector = '$("#' + this.id + 'Summon")';        //`$('#${this.id}Summon')`;
-		//console.log(selector);
+		if (userArray.length == 0) {
+			$('#drawing').hide(1500);
+		}
+		
 		buttons[this.id].removeClass('hidden');
+		userArray.push(this.id);
+		//LAST ITEM IN userArray needs to be reassgined the class of hidden
+		
+		//let selector = '$("#' + this.id + 'Summon")';        //`$('#${this.id}Summon')`;
+		//console.log(selector);
+		
+		//MAKE CONDITION FOR if the button clicked isn't the page you're already on
+			
+		//buttons[this.id].removeClass('hidden');
+		//buttons[userArray[userArray.length - 1]].addClass('hidden');
+			
+		
+		console.log(userArray);
 		
 		
 		
