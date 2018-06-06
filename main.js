@@ -14,25 +14,46 @@ $(document).ready(function () {
 		$(this).css('color', 'black');
 	});*/
 	
-	$('button').on('click', function (event) {
-		//event.preventDefault();
-		//$(this).css('border', 'none');
-		//console.log($(this));
+	$('#navbar').on('click', "button", function () {
+		
+		let buttons = {
+			'reel': $('#reelSummon'),
+			'pics': $('#picsSummon'),
+			'links': $('#linksSummon'),
+			'contact': $('#contactSummon')
+		}
 		
 		$('#drawing').hide(1500);
+		let selector = '$("#' + this.id + 'Summon")';        //`$('#${this.id}Summon')`;
+		//console.log(selector);
+		buttons[this.id].removeClass('hidden');
+		
+		
+		
+	});
+	
+	/* .on('click', "#pics", function () {
+		
+		$('#drawing').hide(1500);
+		$('#picsSummon').removeClass('hidden');
+		
+	});*/
+		
 		
 		//respond to clicked button with appropriate deistination
-		if (this.id == 'reel') {
-			$('#reelSummon').removeClass('hidden');
+	
+		
+		/*if (this.id == 'reel') {
+			
 		} else if (this.id == 'contact') {
 			$('#contactSummon').removeClass('hidden');
 		} else if (this.id == 'links') {
 			$('#linksSummon').removeClass('hidden');
 		} else if (this.id == 'pics') {
 			$('#picsSummon').removeClass('hidden');
-		}
+		}*/
 
-	});
+	
 	
 	
 	

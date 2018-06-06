@@ -2,13 +2,32 @@
 <!--Jenna DiMaritini Website-->
 <html>
 	<head>
-		<link rel="stylesheet" href="main.css" type="text/css">
-		<meta name="viewport" content="width=device-width, initial-scale=1;">
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<title> Jenna DiMaritini </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<!--jQuery-->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous">
+		</script>
+		<!--Bootstrap-->
+		<script 
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+			crossorigin="anonymous">
+		</script>
+		
 		<!--Fonts-->
 		<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel="stylesheet">
+		<!--CSS and Themes-->
+		<link rel="stylesheet" href="main.css" type="text/css">
+		<link 
+			rel="stylesheet" 
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+			crossorigin="anonymous"
+		>
 		
 		
 	</head>
@@ -16,65 +35,60 @@
 	<body>
 		<div class="container-fluid">
 		
-			<div class="header">  
+			<div id="header" class="row">  
+				<h2 class="col-sm-6" id="title"> Jenna DiMartini </h2>
+			</div>
 			
-				<div id="title_contain">
-				
-					<h2 id="title"> Jenna DiMartini </h2>
-				
+			<div id="navbar" class="row">
+				<div class="links">
+					<button id="reel" class="btn" style="text-decoration: none; font-size: 15px;" href="#"><strong>Reel</strong></button>
 				</div>
-				
-				<div id="navbar" class="row">
-					<div class="col-sm-3 links">
-						<button id="reel" class="btn" style="text-decoration: none; font-size: 15px;" href="#"><strong>Reel</strong></button>
-					</div>
-					<div class="col-sm-3 links">
-						<button id="contact" class="btn" style="text-decoration: none; font-size: 15px;" href="#"><strong>Pics</strong></button>
-					</div>
-					<div class="col-sm-3 links">
-						<button id="links" class="btn" style="text-decoration: none; font-size: 15px;" href="#"><strong>Links</strong></button>
-					</div>
-					<div class="col-sm-3 links">
-						<button id="pics" class="btn" style="text-decoration: none; font-size: 15px;" href="#"><strong>Contact</strong></button>
-					</div>
+				<div class="links">
+					<button id="pics" class="btn" style="text-decoration: none; font-size: 15px;" href="#"><strong>Pics</strong></button>
+				</div>
+				<div class="links">
+					<button id="links" class="btn" style="text-decoration: none; font-size: 15px;" href="#"><strong>Links</strong></button>
+				</div>
+				<div class="links">
+					<button id="contact" class="btn" style="text-decoration: none; font-size: 15px;" href="#"><strong>Contact</strong></button>
 				</div>
 			</div>
 			
 			<div class="center_image">
+				
 				 <!--REPLACE WITH ART OR PHOTO OF JENNA'S CHOICE-->
 				<img id="drawing" src="https://static1.squarespace.com/static/55eca14fe4b01d715092dce1/t/5ada24ea88251b3e1dbed032/1524245746808/2b73851743fdf9568d4ae32863381820.jp"/>
-				
+			
+			
 			</div>
 			
-			<div class= "hidden" id="reelSummon">
+			<div class="hidden" id="reelSummon">
 			
 				<iframe width="616" height="346" src="https://www.youtube.com/embed/WlDFia_DWXM?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				
 			</div>
 			
-			<div class= "hidden" id="contactSummon">
+			<div class="hidden" id="contactSummon">
 			
 				<!--web form email and such-->
+				<!--HAVE THIS BE WHAT SLIDES IN FROM THE LEFT SIDE OF PAGE ON CLICK OF TAB-->
 				<img src="https://images.pexels.com/photos/15239/flower-roses-red-roses-bloom.jpg?auto=compress&cs=tinysrgb&h=350"/>
 				
 			</div>
 			
-			<div class= "hidden" id="linksSummon">
+			<div class="hidden" id="linksSummon">
 			
 				<!--linkedin, portfolio, twitter and such-->
 				<img src="https://images.pexels.com/photos/15239/flower-roses-red-roses-bloom.jpg?auto=compress&cs=tinysrgb&h=350"/>
 				
 			</div>
 			
-			<div class= "hidden" id="picsSummon">
+			<div class="hidden" id="picsSummon">
 			
 				<!--headshots, stage, music photos and such-->
 				<img src="https://images.pexels.com/photos/15239/flower-roses-red-roses-bloom.jpg?auto=compress&cs=tinysrgb&h=350"/>
 				
-			</div>
-			
-			
-			
+			</div>			
 			
 		</div>
 	

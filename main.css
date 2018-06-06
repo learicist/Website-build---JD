@@ -9,7 +9,6 @@
 
 .container-fluid {
 	background-color: #9DB2B1;	
-	/*height: 1100px;*/
 }
 
 
@@ -18,22 +17,32 @@
 /*add different css for each link des*/
 
 
-.header {
-	margin-bottom: 110px;
-}
-
-#title_contain {
-	text-align: center;
+#header {
+	margin: 20px 0 50px 0;
+	display: flex;
+	justify-content:center;
 	background-color: #A31E39;
 	/*opacity: 0.7;*/
 	border-radius: 5px;
-	margin-bottom: 20px;
 	box-shadow: 1px 2px 2px;
+	text-align: center;
+	border: 2px solid white;
+	
 }
+
+/*#title_contain {
+	text-align: center;
+	background-color: #A31E39;
+	opacity: 0.7;
+	margin-bottom: 5%;
+	border-radius: 5px;
+	box-shadow: 1px 2px 2px;
+}*/
 
 #title {
 	color: #D6E4E1;
 	font-family: 'Montserrat', sans-serif;
+	border: 2px solid yellow;
 	/*margin: 1em auto;
 	text-align: center;*/
 }
@@ -41,7 +50,8 @@
 #navbar {
 	border: 3px dotted #A31E39;
 	border-radius: 10px;
-	margin: 3% 25%;
+	margin: 5% 25%;
+	display:flex;
 	justify-content: center;
 	background-color: #BFCFCC; /*change to a lighter shade that matches*/
 	/*opacity: 0.6;
