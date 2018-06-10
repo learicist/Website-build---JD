@@ -19,18 +19,22 @@ $(document).ready(function () {
 	$('#mainBtns').on('click', "button", function () {
 		
 		let buttons = {
-			'reel': $('#reelSummon'),
-			'pics': $('#picsSummon'),
-			'links': $('#linksSummon'),
-			'contact': $('#contactSummon')
+			'reelBtn': $('#reelSummon'),
+			'picsBtn': $('#picsSummon'),
+			'linksBtn': $('#linksSummon'),
+			'contactBtn': $('#contactSummon')
 		}
 		
-		if (userArray.length == 0) {
+		if (userArray.length <= 1) {
 			$('#drawing').hide(1500);
 		}
 		
+		let curr = userArray.splice(-1);
 		buttons[this.id].removeClass('hidden');
+		buttons[curr].addClass('hidden');
 		userArray.push(this.id);
+		
+		
 		//LAST ITEM IN userArray needs to be reassgined the class of hidden
 		
 		//let selector = '$("#' + this.id + 'Summon")';        //`$('#${this.id}Summon')`;
@@ -42,7 +46,7 @@ $(document).ready(function () {
 		//buttons[userArray[userArray.length - 1]].addClass('hidden');
 			
 		
-		console.log(userArray);
+		console.log(curr);
 		
 		
 		
