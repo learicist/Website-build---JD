@@ -11,11 +11,13 @@
 	background-color: #485C5a;  
 }
 
-
 /*add media queries for sizing*/
 
 /*add different css for each link des*/
 
+.hidden {
+	display: none;
+}
 
 #header {
 	margin: 20px 0 20px 0;
@@ -26,7 +28,7 @@
 	border-radius: 5px;
 	box-shadow: 2px 2px 5px 3px;
 	text-align: center;
-	border: 2px solid #D6E4E1;
+	border: 1px solid #D6E4E1;
 	
 }
 
@@ -72,7 +74,6 @@ a:hover {
 
 .links {
 	display: inline-block;
-	
 	/*font-size: 2.5 em;
 	border: 0.5px dashed black;
 	justify-content: center;
@@ -82,13 +83,15 @@ a:hover {
 }
 
 .btn {
-	font-family: 'Lora', serif;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
 	background-color: #A31E39;
-	border-radius: 5px;	
+	border-radius: 25px;	
 	color: #D6E4E1; 
 	box-shadow: 0 0 2px black;
 	margin: 0 5px;
 	display: inline-block;
+	letter-spacing: 1.5px;
 	/*text-align: center;
 	display: inline-block;
 	opacity: 0.7;
@@ -97,17 +100,13 @@ a:hover {
 }
 
 
-.center_image {
-	/*text-align: center;
-	margin: 5% 25%;
-	
-	align-items: center;*/
+#center_image {
 	display: flex;
 	justify-content: center;
-}
-;
-.hidden {
-	display: none;
+	margin: 50px 0;
+	/*text-align: center;
+	margin: 5% 25%;
+	align-items: center;*/
 }
 
 #drawing {
@@ -117,18 +116,24 @@ a:hover {
 #drawingSummon {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 230px;
-	/*height: 60%;
-	width: 60%;*/
 	box-shadow: 5px 5px 5px;
+	border: 2px solid white;
+	/*height: 60%;
+	margin-bottom: 230px;
+	width: 60%;*/
+	
+}
+
+#reel {
+	border-radius:15px;
 }
 
 #reelSummon {
-	border-radius:15px;
 	margin-bottom: 230px;
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	border: 2px solid white;
+	/*align-items: center;*/
 }
 
 

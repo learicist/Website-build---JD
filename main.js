@@ -26,7 +26,7 @@ $(document).ready(function () {
 		}
 		
 		if (userArray.length <= 1) {
-			$('#drawing').hide(1500);
+			$('#drawingSummon').hide(1500);
 		}
 		
 		let curr = userArray.splice(-1);
