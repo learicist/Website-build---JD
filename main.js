@@ -1,6 +1,7 @@
 //build button flag to be able to return to home screen
 //once a button is clicked, the flag must allow the others to work
 
+
 $(document).ready(function () {
 	
 	//css for the buttons upon mouse enter
