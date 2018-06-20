@@ -5,6 +5,7 @@
 
 *:focus {
   outline:none;
+  text-decoration: none;
 }
 
 .container-fluid {

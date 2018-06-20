@@ -15,37 +15,37 @@ $(document).ready(function () {
 		$(this).css('color', 'black');
 	});*/
 	
-	let userArray = [];
+	const buttons = {
+		'reelBtn': $('#reelSummon'),
+		'picsBtn': $('#picsSummon'),
+		'linksBtn': $('#linksSummon'),
+		'contactBtn': $('#contactSummon'),
+		'drawing': $('#drawingSummon')
+	}
 	
-	$('#mainBtns').on('click', "button", function () {
+	$('.btn').on('click', function () {
 		
-		let buttons = {
-			'reelBtn': $('#reelSummon'),
-			'picsBtn': $('#picsSummon'),
-			'linksBtn': $('#linksSummon'),
-			'contactBtn': $('#contactSummon')
+		//reassign hidden class to currently active window state
+		for (let i in buttons) {
+			if (buttons[i] !== buttons[this.id]) {
+				buttons[i].addClass('hidden');
+			}			
 		}
 		
+		buttons[this.id].removeClass('hidden');
 		
-		
-		/*if (userArray.length <= 1) {
-			$('#drawingSummon').hide(1500);
-		}
-		
-		let curr = userArray.splice(-1);
+		/*let curr = userArray.splice(-1);
 		buttons[this.id].removeClass('hidden');
 		buttons[curr].addClass('hidden');
-		userArray.push(this.id);*/
-		
-		/*LAST ITEM IN userArray needs to be reassgined the class of hidden
+		userArray.push(this.id);
+		LAST ITEM IN userArray needs to be reassgined the class of hidden
 		//let selector = '$("#' + this.id + 'Summon")';        //`$('#${this.id}Summon')`;
 		//console.log(selector);
 		//MAKE CONDITION FOR if the button clicked isn't the page you're already on
 		//buttons[this.id].removeClass('hidden');
 		//buttons[userArray[userArray.length - 1]].addClass('hidden');*/
-			
 		
-		console.log(curr);
+		console.log(this.id);
 		
 		
 		
@@ -57,11 +57,9 @@ $(document).ready(function () {
 		$('#picsSummon').removeClass('hidden');
 		
 	});*/
-		
-		
+
 		//respond to clicked button with appropriate deistination
-	
-		
+
 		/*if (this.id == 'reel') {
 			
 		} else if (this.id == 'contact') {
@@ -71,9 +69,6 @@ $(document).ready(function () {
 		} else if (this.id == 'pics') {
 			$('#picsSummon').removeClass('hidden');
 		}*/
-
-	
-	
 	
 	
 });
