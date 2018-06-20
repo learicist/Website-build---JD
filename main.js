@@ -26,25 +26,23 @@ $(document).ready(function () {
 			'contactBtn': $('#contactSummon')
 		}
 		
-		if (userArray.length <= 1) {
+		
+		
+		/*if (userArray.length <= 1) {
 			$('#drawingSummon').hide(1500);
 		}
 		
 		let curr = userArray.splice(-1);
 		buttons[this.id].removeClass('hidden');
 		buttons[curr].addClass('hidden');
-		userArray.push(this.id);
+		userArray.push(this.id);*/
 		
-		
-		//LAST ITEM IN userArray needs to be reassgined the class of hidden
-		
+		/*LAST ITEM IN userArray needs to be reassgined the class of hidden
 		//let selector = '$("#' + this.id + 'Summon")';        //`$('#${this.id}Summon')`;
 		//console.log(selector);
-		
 		//MAKE CONDITION FOR if the button clicked isn't the page you're already on
-			
 		//buttons[this.id].removeClass('hidden');
-		//buttons[userArray[userArray.length - 1]].addClass('hidden');
+		//buttons[userArray[userArray.length - 1]].addClass('hidden');*/
 			
 		
 		console.log(curr);
