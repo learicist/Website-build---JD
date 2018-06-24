@@ -21,7 +21,9 @@
 		<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel="stylesheet">
 		<link 
 			rel="stylesheet" 
-			href="/Users/Learicist/Desktop/Coding/FontAwesome/css/all.css">
+			href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" 
+			integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" 
+			crossorigin="anonymous">
 		<!--CSS and Themes-->
 		<link rel="stylesheet" href="main.css" type="text/css">
 		<link 
@@ -83,7 +85,7 @@
 				</div>
 			
 				<div class="hidden col-sm-6" id="reelSummon">
-					<iframe id="reel" width="640" height="360" src="https://www.youtube.com/embed/WlDFia_DWXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<iframe style="border-radius: 15px" id="reel" width="640" height="360" src="https://www.youtube.com/embed/WlDFia_DWXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
 				
 				<div class="hidden col-sm-6" id="linksSummon">
@@ -107,11 +109,24 @@
 				</div>			
 				
 				<div class="hidden col-sm-6" id="contactSummon">
-			
-					<!--web form email and such-->
 					<!--HAVE THIS BE WHAT SLIDES IN FROM THE LEFT SIDE OF PAGE ON CLICK OF TAB-->
-					<img id='contact' src="https://images.pexels.com/photos/15239/flower-roses-red-roses-bloom.jpg?auto=compress&cs=tinysrgb&h=350">
-					
+					<ul id="form">
+						<form action="mailto:learicist@gmail.com" method="post" enctype="text/plain">
+							<li>
+							  <input class="textbox" type="text" placeholder="Name" required/>
+							</li>
+							<li>
+							  <input class="textbox" type="text" placeholder="Email Address" required/>
+							</li>
+							<li>
+							  <input class="textbox" type="text" placeholder="Phone Number" required/>
+							</li>
+							<li>
+							  <textarea class="textbox" id="messagebox" type="text" placeholder="Message" required></textarea>
+							</li>
+							<button id="send" type="submit">Send</button>
+						</form>
+					</ul>
 				</div>
 			
 			</div>
