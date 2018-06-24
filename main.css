@@ -73,16 +73,6 @@ a:hover {
 	color: yellow;
 }*/
 
-.links {
-	display: inline-block;
-	/*font-size: 2.5 em;
-	border: 0.5px dashed black;
-	justify-content: center;
-	align-items: center;
-	margin: 5px 5px;
-	border-radius: 5px;*/
-}
-
 .btn {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
@@ -124,6 +114,27 @@ a:hover {
 	margin-bottom: 230px;
 	border: 2px solid white;
 	*/
+}
+
+#picsSummon {
+	
+}
+
+#linksSummon {
+	display: flex;
+	justify-content: center;
+}
+
+.links {
+	margin: 3%;
+}
+
+#imdb {
+	/*border: 1px solid black;
+	padding: 2px;*/
+	background-color: #A31E39;
+	color: #949494;
+	margin: 3%;
 }
 
 #reel {

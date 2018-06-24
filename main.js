@@ -15,6 +15,16 @@ $(document).ready(function () {
 		$(this).css('color', 'black');
 	});*/
 	
+	$('#title').on({
+		'mouseenter': function () {
+			$(this).css('cursor', 'pointer');
+		},
+		'click': function () {
+			location.reload();
+		}
+	});
+	
+	
 	const buttons = {
 		'reelBtn': $('#reelSummon'),
 		'picsBtn': $('#picsSummon'),
