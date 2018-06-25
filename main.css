@@ -132,6 +132,10 @@ a:hover {
 	color: #949494;
 }
 
+#backstage {
+	width: 20%;
+}
+
 #contactSummon {
 	display: flex;
 	justify-content: center;

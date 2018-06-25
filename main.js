@@ -1,5 +1,10 @@
-//build button flag to be able to return to home screen
-//once a button is clicked, the flag must allow the others to work
+const buttons = {
+	'reelBtn': $('#reelSummon'),
+	'picsBtn': $('#picsSummon'),
+	'linksBtn': $('#linksSummon'),
+	'contactBtn': $('#contactSummon'),
+	'drawing': $('#drawingSummon')
+}
 
 
 $(document).ready(function () {
@@ -23,16 +28,7 @@ $(document).ready(function () {
 			location.reload();
 		}
 	});
-	
-	
-	const buttons = {
-		'reelBtn': $('#reelSummon'),
-		'picsBtn': $('#picsSummon'),
-		'linksBtn': $('#linksSummon'),
-		'contactBtn': $('#contactSummon'),
-		'drawing': $('#drawingSummon')
-	}
-	
+
 	$('.btn').on('click', function () {
 		
 		//reassign hidden class to currently active window state
@@ -56,9 +52,6 @@ $(document).ready(function () {
 		//buttons[userArray[userArray.length - 1]].addClass('hidden');*/
 		
 		console.log(this.id);
-		
-		
-		
 	});
 	
 	/* .on('click', "#pics", function () {
@@ -67,18 +60,6 @@ $(document).ready(function () {
 		$('#picsSummon').removeClass('hidden');
 		
 	});*/
-
-		//respond to clicked button with appropriate deistination
-
-		/*if (this.id == 'reel') {
-			
-		} else if (this.id == 'contact') {
-			$('#contactSummon').removeClass('hidden');
-		} else if (this.id == 'links') {
-			$('#linksSummon').removeClass('hidden');
-		} else if (this.id == 'pics') {
-			$('#picsSummon').removeClass('hidden');
-		}*/
 	
 	
 });
