@@ -54,19 +54,6 @@
 	box-shadow: 2px 3px 5px 3px;
 }
 
-/*maybe switch to button, maybe just scratch*/
-/*a:link {
-	color: rgb(0, 0, 0, 0.8);
-}
-
-a:visited {
-	color: rgb(0, 0, 0, 0.4);
-}
-
-a:hover {
-	color: yellow;
-}*/
-
 .btn {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
@@ -79,12 +66,10 @@ a:hover {
 	letter-spacing: 1.5px;
 }
 
-
 #center_image {
 	display: flex;
 	justify-content: center;
 	margin: 50px 0 500px 0;
-	border: 2px solid white;
 }
 
 #drawing {
@@ -135,7 +120,8 @@ a:hover {
 }
 
 #backstage {
-	/* width: 15%; */
+	max-width: 16%;
+	min-width: 60px;
 	border-radius: 15px;
 	border: 2px solid black;
 }
