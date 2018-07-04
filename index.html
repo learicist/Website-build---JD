@@ -35,8 +35,10 @@
 	
 	<body>
 		<div class="container-fluid">
-			<div id="header" class="row">  
-				<h2 class="col-sm-6" id="title"> Jenna DiMartini </h2>
+			<div id="topRow" class="row">  
+				<div id="header" class="col-sm-7">
+					<h2 id="title"> Jenna DiMartini </h2>
+				</div>
 			</div>
 			
 			<div id="navbar" class="row">
@@ -65,29 +67,29 @@
 					</div>
 				</div> END OF ERASE ME-->
 			
-				<div id="mainBtns" class="col-sm-4">
+				<div id="mainBtns">  <!--class="col-sm-6"-->
 					<button 
 						id="reelBtn" 
-						class="btn" 
-						style="text-decoration: none; font-size: 1.2em;">
+						class="main" 
+						style="text-decoration: none;">
 						Reel
 					</button>
 					<button 
 						id="picsBtn" 
-						class="btn" 
-						style="text-decoration: none; font-size: 1.2em;">
+						class="main" 
+						style="text-decoration: none;">
 						Pics
 					</button>
 					<button 
 						id="linksBtn" 
-						class="btn" 
-						style="text-decoration: none; font-size: 1.2em;">
+						class="main" 
+						style="text-decoration: none;">
 						Links
 					</button>
 					<button 
 						id="contactBtn" 
-						class="btn" 
-						style="text-decoration: none; font-size: 1.2em;">
+						class="main" 
+						style="text-decoration: none;">
 						Contact
 					</button>
 				</div>
@@ -120,27 +122,27 @@
 				
 				<div class="hidden col-sm-6" id="picsSummon">
 					<!--headshots, stage, music photos and such-->
-					<img id="pics" src="https://images.pexels.com/photos/15239/flower-roses-red-roses-bloom.jpg?auto=compress&cs=tinysrgb&h=350"/>
-					
+					<img id="rose" class="pics" src="https://m.media-amazon.com/images/M/MV5BMTYyOTY3MDc3MV5BMl5BanBnXkFtZTgwNTQ4MzIxMDI@._V1_SY1000_CR0,0,749,1000_AL_.jpg">
+					<img id="jenna1" class="pics" src="https://static1.squarespace.com/static/550490d5e4b0f9921cd11cad/562a3761e4b0571626c8b6a9/562a37b2e4b0bde5213f521d/1445607364501/IMG_1765-2-Edit.jpg?format=750w">
 				</div>			
 				
 				<div class="hidden col-sm-6" id="contactSummon">
 					<!--HAVE THIS BE WHAT SLIDES IN FROM THE LEFT SIDE OF PAGE ON CLICK OF TAB-->
 					<ul id="form">
-						<form action="mailto:learicist@gmail.com" method="post" enctype="text/plain">
+						<form action="https://formspree.io/learicist@gmail.com" method="post">
 							<li>
-							  <input class="textbox" type="text" placeholder="Name" required>
+							  <input class="textbox" name="name" type="text" placeholder="Name" required>
 							</li>
 							<li>
-							  <input class="textbox" type="text" placeholder="Email Address" required>
+							  <input class="textbox" name="email" type="text" placeholder="Email Address" required>
 							</li>
 							<li>
-							  <input class="textbox" type="text" placeholder="Phone Number" required>
+							  <input class="textbox" name="phone" type="text" placeholder="Phone Number" required>
 							</li>
 							<li>
-							  <textarea class="textbox" id="messagebox" type="text" placeholder="Message" required></textarea>
+							  <textarea class="textbox" name="message" id="messagebox" type="text" placeholder="Message" required></textarea>
 							</li>
-							<button id="send" type="submit">Send</button>
+							<input id="send" type="submit" value="Sumbit">
 						</form>
 					</ul><!--list-->
 				</div><!--contactSummon-->
