@@ -10,27 +10,12 @@ $(document).ready(function () {
 	console.log('Hello Jenna');
 	
 	$('#title').on({
-		'mouseenter': function () {
-			$(this).css('cursor', 'pointer');
-		},
 		'click': function () {
 			location.reload();
 		}
 	});
 	
 	$('.main').on({
-		'mouseenter': function () {
-			$(this).css({
-				'background-color': '#4b4a55',
-				'color': '#ebeaed'
-			});
-		},
-		'mouseleave': function () {
-			$(this).css({
-				'background-color': '#ebeaed',
-				'color': '#4b4a55'
-			});
-		},
 		'click': function () {
 			//stop video if user leaves screen
 			if (!buttons.reelBtn.hasClass('hidden')) {

@@ -9,10 +9,11 @@
 }
 
 .container-fluid {
-	background-color: #9896a4;  
+	background-color: #d6d6db;  
+	min-height: 100vh;
 }
 
-/*add media queries for sizing*/
+/*add media queries for sizing -- include nav menu, change display to default */
 
 /*add different css for each link des*/
 
@@ -22,73 +23,84 @@
 
 #topRow {
 	display: flex;
-	justify-content:center;
+	margin-top: 5px;
 }
 
 #header {
-	margin-bottom: 20px;
 	display: flex;
 	justify-content:center;
-	background-color: #d6d6db;
-	border-radius: 5px;
-	box-shadow: 2px 2px 5px 3px;
-	text-align: center;
-	border: 1px solid #D6E4E1;
-}
+} 
 
 #title {
-	color: #f9f9fa;
+	color: #898696;
 	font-family: 'Montserrat', sans-serif;
-	background-color: #4b4a55;
-	box-shadow: 0px 0px 3px;
-	margin: 15px 0 15px 0;
-	padding: 6px 10px;
-	border-radius: 5px;
+	font-size: 2.2em;
+	font-weight: 500;
+	text-align: center;
 }
 
-#navbar {
+#secondRow {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
+	padding-right: 35px;
+	margin-bottom: 12%;
 }
 
 #mainBtns {
-	border-radius: 7px;
-	margin: 2% auto;
-	padding: 0.5% 1%;
-	background-color: #898696;
+	margin: auto;
+	padding: 1%;
 	display: flex;
 	justify-content: center;
-	box-shadow: 2px 3px 5px 3px;
+	align-items: center;
 }
 
 .main {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
-	font-size: 1.2em;
-	background-color: #ebeaed;
+	font-size: 1.25em;
 	color: #4b4a55; 
 	border-radius: 8px;	
-	box-shadow: 0 0 2px #5a5866; 
-	padding: 0.8% 1%;
-	margin: 0.5% 1%;
+	margin: 0.5% 1.75%;
 	letter-spacing: 0.015em;
 	white-space: normal;
+}
+
+.links {
+	margin: 0 3px;
+}
+
+#imdb {
+	color: #5a5866;
+	border-radius: 7.5px;
+}
+
+#bslink {
 	text-align: center;
-	display: flex;
-	justify-content: center;
+	width: 80px;
+}
+
+#backstage {
+	max-width: 27px;
+	min-width: 27px;
+	border-radius: 5px;
+	border: 2px solid #4b4a55;
+}
+
+#insta {
+	color: #5a5866;
+	background-color: #d6d6db;
+	border-radius: 7.5px;
 }
 
 #center_image {
 	display: flex;
 	justify-content: center;
-	margin: 25px 0 450px 0;
 }
 
 #drawing {
 	border-radius:15px;
 	height: 100%;
 	width: 80%;
-	box-shadow: 5px 5px 5px;
 }
 
 #drawingSummon {
@@ -101,10 +113,11 @@
 	justify-content: center;
 	border-radius: 15px;
 	padding: 12px;
-	border: 2px dotted #f9f9fa;
 }
 
 #reel {
+	border: 20px solid black;
+	border-radius: 15px;
 }
 
 #picsSummon {
@@ -119,49 +132,15 @@
 	border-radius: 5px;
 }
 
-#linksSummon {
- 	display: flex;
-	justify-content: center;
-	border: 2px solid #f9f9fa;
-	border-radius: 15px;
-	margin-bottom: 200px;
-	box-shadow: 0px 3px 6px;
-}
-
-.links {
-	margin: 3%;
-}
-
-#imdb {
-	background-color: #5a5866;
-	color: #d6d6db;
-	border-radius: 7.5px;
-}
-
-#bslink {
-	text-align: center;
-	width: 80px;
-}
-
-#backstage {
-	max-width: 16%;
-	min-width: 60px;
-	border-radius: 15px;
-	border: 2px solid #4b4a55;
-}
-
-#insta {
-	color: #5a5866;
-	background-color: #d6d6db;
-	border-radius: 7.5px;
-	padding: 0 2px;
-}
-
 #contactSummon {	
 	padding: none;
 	display: flex;
 	justify-content: center;
 	margin: 1% auto;
+}
+
+#contactBtn {
+	margin-right: 13%;
 }
 
 #form {
@@ -194,12 +173,16 @@
 	border: 1.5px dotted #f9f9fa;
 	border-radius: 15px;
 	padding: 5px;
+	margin-top: 10px;
 }
 
 #foot {
 	display: flex;
 	justify-content: center;
 	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 
 #lear {

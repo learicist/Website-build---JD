@@ -36,62 +36,65 @@
 	<body>
 		<div class="container-fluid">
 			<div id="topRow" class="row">  
-				<div id="header" class="col-sm-8">
-					<h2 id="title"> Jenna DiMartini </h2>
+				<div id="header" class="col-sm-4">
+					<a id="title" style="text-decoration: none;" href="#"> Jenna DiMartini </a>
 				</div>
 			</div>
 			
-			<div id="navbar" class="row">
-				<!--COLLAPSIBLE MENU ICON FOR MEDIA QUERY-->
-				<!--<div id="ERASE ME"> ERASE ME
-					<button 
-						id="menu" 
-						class="navbar-toggle collapsed" 
-						type="button" 
-						data-toggle="collapse" 
-						data-target="#hamburger" 
-						aria-expanded="false" 
-						aria-controls="navbar">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span> 
-					 </button>
-					  
-					<div id="hamburger" class="navbar-collapse collapse">
-						<ul class="nav navbar-nav">
-							<li class="dropdown"><a href="#Contact"><span>Contact</span></a></li>
-							<li class="dropdown"><a href="#Portfolio"><span>Portfolio</span></a></li>
-							<li class="dropdown"><a href="#About"><span>About</span></a></li>
-						</ul>
+			<div id="secondRow" class="row">
+				<div id="navbar">
+					<div id="mainBtns">
+						<a 
+							id="reelBtn" 
+							class="main" 
+							href="#"
+							style="text-decoration: none;">
+							Reel
+						</a>
+						<a 
+							id="picsBtn" 
+							class="main" 
+							href="#"
+							style="text-decoration: none;">
+							Pics
+						</a>
+						<a 
+							id="resBtn" 
+							class="main" 
+							href="#"
+							style="text-decoration: none;">
+							Resume
+						</a>
+						<a 
+							id="contactBtn" 
+							class="main" 
+							href="#"
+							style="text-decoration: none;">
+							Contact
+						</a>
+						<!--links off site-->				
+						<a 
+							href="https://www.imdb.com/name/nm2821727/" 
+							target="_blank" 
+							class="links">
+							<i id="imdb" class="fab fa-imdb fa-2x icons"></i>	
+						</a>
+						<a 
+							id="bslink" 
+							href="https://www.backstage.com/u/jennadimartini/" 
+							target="_blank" 
+							class="links">
+							<img 
+								id="backstage" 
+								src="https://pbs.twimg.com/profile_images/955459278097104901/AaLqqHtn_400x400.jpg">
+						</a>
+						<a 
+							href="https://www.instagram.com/jenna_dimartini/?hl=en" 
+							target="_blank" 
+							class="links">
+							<i id="insta" class="fab fa-instagram fa-2x icons"></i>	
+						</a>
 					</div>
-				</div> END OF ERASE ME-->
-			
-				<div id="mainBtns" class="col-sm-4">  <!---->
-					<button 
-						id="reelBtn" 
-						class="main" 
-						style="text-decoration: none;">
-						Reel
-					</button>
-					<button 
-						id="picsBtn" 
-						class="main" 
-						style="text-decoration: none;">
-						Pics
-					</button>
-					<button 
-						id="linksBtn" 
-						class="main" 
-						style="text-decoration: none;">
-						Links
-					</button>
-					<button 
-						id="contactBtn" 
-						class="main" 
-						style="text-decoration: none;">
-						Contact
-					</button>
 				</div>
 			</div>
 			
@@ -101,7 +104,7 @@
 					 <!--consider adding the class img-responsive-->
 					<img 
 						id="drawing"
-						src="https://i.pinimg.com/736x/6a/f7/fd/6af7fdfae164f7ecffa8161888a720be--psychiatric-help-peanuts-cartoon.jpg"/>
+						src="http://res.cloudinary.com/learicist/image/upload/v1531633849/Headshot_2016_copy_zz8xen.jpg"/>
 				</div>
 			
 				<div class="hidden col-sm-6" id="reelSummon">
@@ -114,21 +117,6 @@
 						allow="autoplay; encrypted-media" 
 						allowfullscreen>
 					</iframe>
-				</div>
-				
-				<div class="hidden col-sm-6" id="linksSummon">
-					<!--linkedin, portfolio, twitter and such-->
-					<a href="https://www.imdb.com/name/nm2821727/" target="_blank" class="links">
-						<i id="imdb" class="fab fa-imdb fa-4x icons"></i>	
-					</a>
-					<a id="bslink" href="https://www.backstage.com/u/jennadimartini/" target="_blank" class="links">
-						<img id="backstage" src="https://pbs.twimg.com/profile_images/955459278097104901/AaLqqHtn_400x400.jpg"/>
-					</a>
-					<a href="https://www.instagram.com/jenna_dimartini/?hl=en" target="_blank" class="links">
-						<i id="insta" class="fab fa-instagram fa-4x icons"></i>	
-					</a>
-					
-					
 				</div>
 				
 				<div class="hidden col-sm-6" id="picsSummon">
