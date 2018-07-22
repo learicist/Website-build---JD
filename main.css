@@ -70,8 +70,11 @@
 }
 
 #imdb {
-	color: #5a5866;
-	border-radius: 7.5px;
+	color: #d6d6db;
+	border: 1px solid #5a5866;
+	border-width: 1px 3px;
+	background-color: #5a5866;
+	border-radius: 5px;
 }
 
 #bslink {
@@ -95,12 +98,14 @@
 #center_image {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 5%;
 }
 
 #drawing {
 	border-radius:15px;
 	height: 100%;
 	width: 80%;
+	
 }
 
 #drawingSummon {
@@ -154,7 +159,7 @@
 	background-color: #5a5866;
 	border-radius: 6px;
 	margin: 3% auto;
-	padding: 5px 10px 0 10px;
+	padding: 5px 10px 5px 10px;
 	font-size: 1.25em;
 	color: #f9f9fa;
 }
@@ -180,7 +185,7 @@
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	position: fixed;
+	position: bottom;
 	bottom: 0;
 	width: 100%;
 }
