@@ -16,6 +16,10 @@ $(document).ready(function () {
 	});
 	
 	$('.main').on({
+		'mouseenter': function () { 
+			$(this).css('color', 'white')
+		},
+		
 		'click': function () {
 			//stop video if user leaves screen
 			if (!buttons.reelBtn.hasClass('hidden')) {

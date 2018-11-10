@@ -8,9 +8,21 @@
   text-decoration: none;
 }
 
-.container-fluid {
-	background-color: #d6d6db;  
-	min-height: 100vh;
+*:hover {
+  outline:none;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+	color: orange;
+}
+
+body {
+	background-image: url("http://res.cloudinary.com/learicist/image/upload/v1535302685/Jenna%20Site/Jenna_Main_Screen.jpg");
+	background-size: 100% auto;
+/* 	min-height: 100vh;
+	background-repeat: no-repeat; */
 }
 
 /*add media queries for sizing -- include nav menu, change display to default */
@@ -21,55 +33,57 @@
 	display: none;
 }
 
-#topRow {
+#mainBtns {
+	margin: auto;
+	padding: 5px;
 	display: flex;
-	margin-top: 5px;
-}
-
-#header {
-	display: flex;
-	justify-content:center;
+	float: right;	
 } 
 
-#title {
-	color: #898696;
+.main {
+	color: white; 
 	font-family: 'Montserrat', sans-serif;
-	font-size: 2.2em;
 	font-weight: 500;
-	text-align: center;
-}
+	letter-spacing: 0.025em;
+	margin: 5px 15px; 
+	/* font-size: 1.15em;
+	border-radius: 8px;
+	white-space: normal;
+	*/
+} 
 
 #secondRow {
 	display: flex;
-	justify-content: flex-end;
-	padding-right: 35px;
-	margin-bottom: 12%;
-}
+	margin-top: 12%;
+} 
 
-#mainBtns {
-	margin: auto;
-	padding: 1%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+#jenna {
+	/* display: flex;
+	justify-content:center; */
+	padding-left: 50px;
+} 
 
-.main {
+#title {
+	color: black;
 	font-family: 'Montserrat', sans-serif;
+	font-size: 2.2em;
 	font-weight: 600;
-	font-size: 1.25em;
-	color: #4b4a55; 
-	border-radius: 8px;	
-	margin: 0.5% 2%;
-	letter-spacing: 0.015em;
-	white-space: normal;
+	letter-spacing: .25em;
+	
 }
 
-.links {
+#contactParent {
+	position: fixed;
+	right: 0;
+	margin-top: 15px;
+}
+
+/* links on hold per request */
+/* .links {
 	margin: 0 3px;
 }
 
-/* #imdb {
+#imdb {
 	color: #d6d6db;
 	border: 1px solid #5a5866;
 	border-width: 1px 3px;
@@ -103,8 +117,8 @@
 
 #drawing {
 	border-radius:15px;
-	height: 100%;
-	width: 80%;
+	/* height: 100%;
+	width: 80%; */
 	
 }
 
@@ -183,8 +197,8 @@
 
 #foot {
 	display: flex;
-	justify-content: center;
-	text-align: center;
+	/* justify-content: center;
+	text-align: center; */
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -192,6 +206,8 @@
 
 #lear {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.1em;
+	font-size: 0.9em;
+	font-weight: 300;
 	color: #f9f9fa;
+	opacity: 0.4;
 }
