@@ -21,8 +21,8 @@ a:hover {
 body {
 	background-image: url("http://res.cloudinary.com/learicist/image/upload/v1535302685/Jenna%20Site/Jenna_Main_Screen.jpg");
 	background-size: 100% auto;
-/* 	min-height: 100vh;
-	background-repeat: no-repeat; */
+	/* 	min-height: 100vh;
+	 background-repeat: no-repeat;*/
 }
 
 /*add media queries for sizing -- include nav menu, change display to default */
@@ -34,7 +34,6 @@ body {
 }
 
 #mainBtns {
-	margin: auto;
 	padding: 5px;
 	display: flex;
 	float: right;	
@@ -54,7 +53,8 @@ body {
 
 #secondRow {
 	display: flex;
-	margin-top: 12%;
+	margin-top: 6%;
+	border: 1px solid white;
 } 
 
 #jenna {
@@ -68,14 +68,21 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 2.2em;
 	font-weight: 600;
-	letter-spacing: .25em;
-	
+	letter-spacing: .18em;
 }
 
 #contactParent {
 	position: fixed;
 	right: 0;
-	margin-top: 15px;
+	float: right;
+	margin: 15px 0;
+	padding-right: 2px;
+	border: 1px solid white;
+}
+
+#contactBtn {
+	border: 1px dashed white;
+	
 }
 
 /* links on hold per request */
@@ -115,14 +122,15 @@ body {
 	margin-bottom: 5%;
 }
 
-#drawing {
+#resume {
 	border-radius:15px;
-	/* height: 100%;
-	width: 80%; */
-	
+	height: 100%;
+	width: 80%;
+	background-color: black;
+	color: black;
 }
 
-#drawingSummon {
+#resSummon {
 	display: flex;
 	justify-content: center;
 }
@@ -158,39 +166,38 @@ body {
 	margin: 1% auto;
 }
 
-#contactBtn {
-	margin-right: 13%;
-}
-
 #form {
 	list-style: none;
 	text-align: center;
 	padding: 10px;
 	margin: 2% auto;
+	background-color: white;
+	border-radius: 2px;
 }
 
 .textbox {
-	background-color: #5a5866;
-	border-radius: 6px;
+	background-color: white;
+	border-radius: 3px;
 	margin: 3% auto;
 	padding: 5px 10px 5px 10px;
 	font-size: 1.25em;
-	color: #f9f9fa;
+	color: black;
 }
 
 ::placeholder {
-	font-size: 1.5em;
-	color:#f9f9fa;
+	/* font-size: 1.5em; */
+	color: black;
 	opacity: 0.8;
+	
 }
 
 #send {
-	background-color: #4b4a55;
+	background-color: black;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.5em;
-	color: #ebeaed;
-	border: 1.5px dotted #f9f9fa;
-	border-radius: 15px;
+	font-size: 1.25em;
+	color: white;
+	/* border: 1.5px dotted #f9f9fa; */
+	border-radius: 5px;
 	padding: 5px;
 	margin-top: 10px;
 }
