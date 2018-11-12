@@ -38,20 +38,19 @@ $(document).ready(function () {
 				'opacity': '0.9'
 			});
 			
+			//display chosen page and hide others
+			for (let i in buttons) {
+				if (buttons[i] !== buttons[this.id]) {					
+					buttons[i].addClass('hidden');
+				}			
+			}
+			buttons[this.id].removeClass('hidden');
+			
 			//stop video if user leaves screen
 			if (!buttons.reelBtn.hasClass('hidden')) {
 				let temp = $('#reel').attr('src'); 
 				$('#reel').attr('src', temp);
 			}
-			
-			//display chosen page and hide others
-			for (let i in buttons) {
-				if (buttons[i] !== buttons[this.id]) {
-					buttons[i].addClass('hidden');
-				}			
-			}
-			buttons[this.id].removeClass('hidden');
-			//console.log(this.id);
 		}
 	});	
 	

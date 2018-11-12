@@ -3,7 +3,7 @@
 	padding: 0;
 }
 
-*:focus {
+/* *:focus {
   outline:none;
   text-decoration: none;
 }
@@ -16,7 +16,7 @@
 
 a:hover {
 	color: orange;
-}
+} */
 
 body {
 	background-image: url("http://res.cloudinary.com/learicist/image/upload/v1535302685/Jenna%20Site/Jenna_Main_Screen.jpg");
@@ -51,15 +51,13 @@ body {
 	*/
 } 
 
-#secondRow {
+#row2mgr {
 	display: flex;
-	margin-top: 6%;
-	border: 1px solid white;
+	margin: 6% 0;
+	/* border: 1px solid white; */
 } 
 
 #jenna {
-	/* display: flex;
-	justify-content:center; */
 	padding-left: 50px;
 } 
 
@@ -72,18 +70,18 @@ body {
 }
 
 #contactParent {
-	position: fixed;
-	right: 0;
+	/* position: fixed;
+	right: 0; 
 	float: right;
-	margin: 15px 0;
+	border: 1px solid white; */
+	margin: 15px 0 15px auto;
 	padding-right: 2px;
-	border: 1px solid white;
 }
 
-#contactBtn {
+/* #contactBtn {
 	border: 1px dashed white;
 	
-}
+} */
 
 /* links on hold per request */
 /* .links {
@@ -117,9 +115,16 @@ body {
 } */
 
 #center_image {
+	margin-bottom: 5%;
+	/* display: flex;
+	justify-content: center; */
+}
+
+#resSummon {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 5%;
+	margin: 2% auto;
+	border: 1px solid white;
 }
 
 #resume {
@@ -128,11 +133,6 @@ body {
 	width: 80%;
 	background-color: black;
 	color: black;
-}
-
-#resSummon {
-	display: flex;
-	justify-content: center;
 }
 
 #reelSummon {
@@ -160,17 +160,26 @@ body {
 }
 
 #contactSummon {	
-	padding: none;
+	/* padding: none;
+	margin: 1% 5% 1% auto;
+	border: 1px solid white; */
 	display: flex;
-	justify-content: center;
-	margin: 1% auto;
+	justify-content: center; 
+	
+}
+
+#repContact {
+	color: white;
+	padding-left: 5%
 }
 
 #form {
 	list-style: none;
+	display: flex;
+	justify-content: center;
 	text-align: center;
 	padding: 10px;
-	margin: 2% auto;
+	margin: 5% 5% 10% auto;
 	background-color: white;
 	border-radius: 2px;
 }
@@ -178,7 +187,7 @@ body {
 .textbox {
 	background-color: white;
 	border-radius: 3px;
-	margin: 3% auto;
+	margin: 5% auto;
 	padding: 5px 10px 5px 10px;
 	font-size: 1.25em;
 	color: black;
