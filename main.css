@@ -58,7 +58,7 @@ body {
 } 
 
 #jenna {
-	padding-left: 50px;
+	padding-left: 35px;
 } 
 
 #title {
@@ -148,8 +148,9 @@ body {
 }
 
 #picsSummon {
-	display: flex;
-	justify-content: center;
+	display: inline-block;
+	text-align: center;
+	border: 1px dotted white;
 }
 
 .pics {
