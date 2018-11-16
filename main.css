@@ -18,6 +18,29 @@ a:hover {
 	color: orange;
 } */
 
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #00000090; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #fff; 
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #202020;
+}
+
+
 body {
 	background-image: url("http://res.cloudinary.com/learicist/image/upload/v1535302685/Jenna%20Site/Jenna_Main_Screen.jpg");
 	background-size: 100% auto;
@@ -159,6 +182,12 @@ body {
 	margin: 2%;
 	border-radius: 5px;
 }
+
+/* #mainPic {
+	width: 60%;
+} */
+
+
 
 #contactSummon {	
 	/* padding: none;
