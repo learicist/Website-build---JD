@@ -37,7 +37,7 @@ a:hover {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #202020;
+	background: #ffffff;
 }
 
 
@@ -168,6 +168,13 @@ body {
 #reel {
 	border: 20px solid black;
 	border-radius: 15px;
+	margin-bottom: 100px; /*to accomodate the border width*/
+}
+
+#reelAbout {
+	color: white;
+	position: absolute;
+	bottom: 10px;
 }
 
 #picsSummon {
@@ -187,7 +194,20 @@ body {
 	width: 60%;
 } */
 
+#musicSummon {
+	border: 5px solid white;
+	display: inline-block;
+	margin: auto;
+}
 
+#songs {
+	border: 1px dashed white;
+	margin: 15px;
+}
+
+#wolf {
+	border: 2px dotted white;
+}
 
 #contactSummon {	
 	/* padding: none;

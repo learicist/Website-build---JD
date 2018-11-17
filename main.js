@@ -1,9 +1,10 @@
 const buttons = {
+	'resBtn': $('#resSummon'),
 	'reelBtn': $('#reelSummon'),
 	'picsBtn': $('#picsSummon'),
-	'linksBtn': $('#linksSummon'),
-	'contactBtn': $('#contactSummon'),
-	'resBtn': $('#resSummon')
+	'musicBtn': $('#musicSummon'),
+	//'linksBtn': $('#linksSummon'), <-- this may come back at a later date
+	'contactBtn': $('#contactSummon')	
 }
 
 $(document).ready(function () {
